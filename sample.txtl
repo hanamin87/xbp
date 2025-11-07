@@ -1,0 +1,19 @@
+<html>
+<head>
+ <title>サンプルページ</title>
+</head>
+
+<body bgcolor="#7fffd4”>
+
+普通の文字
+
+ <p>
+ <u>強調の文字</u>
+
+<p>
+ 
+ <img src="PC.png" width="100" alt=パル>
+ <img src="hogehoge/sea.jpg" width="200" alt=海>
+
+</body bgcolor="#7fffd4”>
+</html>
