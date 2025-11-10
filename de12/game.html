@@ -11,39 +11,162 @@
     <h1>Pythonでゲーム作成</h1>
     <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
      <h2>ゲーム説明</h2>
-     <h2>コード</h2>
-     <h2>遊んでいる様子</h2>
+
+このゲームは不思議な卵の妖精エッグっちの育成ゲームです。🥚<br>
+特定の選択肢を選ぶとあなたのエッグっちはもう来なくなってしまいます。<br>
+育て方によって「属性」、「性格」、「好物」が変わります。<br>
+
+
      <h2>ソースコード</h2>
+ print("このゲームは不思議な生物エッグっちの育成ゲームです。")<br>
+name=input("エッグっちの名前を決めて下さい")<br>
+x=0<br>
+    #　ご飯をあげる<br>
+print(name,"はお腹を空かせています")<br>
+print("1.ささみをあげる")<br>
+print("2.ケーキをあげる")<br>
+print("3.野菜をあげる")<br>
+print("4.放置する")<br>
+
+
+choice = input("選択肢番号を半角数字で入力")<br>
+if  choice == "1":<br>
+        print("美味しかったようです")<br>
+        y=x+1<br>
+
+if choice == "2":<br>
+       print("美味しかったようです")<br>
+y=x+80<br>
+if choice == "3":<br>
+       print("美味しかったようです")<br>
+y=x+200<br>
+if choice =="4":<br>
+    print(name,"は死んでしまいました『もう来ないからねー』")<br>
+    sys.exit()   <br>
+
+ # ゲーム終了<br>
+ 
+    # 遊ぶ<br>
+print(name,"は遊んで欲しいようです")<br>
+print("1.卓球をする")<br>
+print("2.海に行く")<br>
+print("3.山に行く")<br>
+print("4.放置する")<br>
+
+choice = input("選択肢番号を半角数字で入力")<br>
+if  choice == "1":<br>
+        print("楽しかったようです")<br>
+        z=y+3<br>
+
+if choice == "2":<br>
+        print("楽しかったようです")<br>
+        z=y+6<br>
+if choice == "3":<br>
+        print("楽しかったようです")<br>
+        z=y+50<br>
+if choice == "4":<br>
+        print(name,"は死んでしまいました『もう来ないからねー』")<br>
+        sys.exit()<br>
+  # ゲーム終了<br>
+
+# 戦い<br>
+print(name,"の前に怖いヤンキーが現れました")<br>
+print("1.こぶしで戦う")<br>
+print("2.弓で戦う")<br>
+print("3.逃げる")<br>
+print("4.放置する")<br>
+
+choice = input("選択肢番号を半角数字で入力")<br>
+if  choice == "1":<br>
+        print("倒せました")<br>
+        w=z+13<br>
+
+if choice == "2":<br>
+        print("倒せました")<br>
+        w=z+15<br>
+if choice == "3":<br>
+        print("無事逃げられました")<br>
+        w=z+20<br>
+if choice == "4":<br>
+       print(name,"は死んでしまいました『もう来ないからねー』")<br>
+       sys.exit()<br>
+  # ゲーム終了<br>
+  
+#進化結果<br>
+print("おや...",name,"の様子が...")<br>
+print(name,"は進化した‼️")<br>
+
+a="食いしん坊属"<br>
+b="体育会系属"<br>
+c="インテリ属"<br>
+d="テキパキ系"<br>
+e="のんびり系"<br>
+f="暴走系"<br>
+g="バトル"<br>
+h="読書"<br>
+i="睡眠"<br>
+if w==20:<br>
+    print("属性：",a,"性格：",e,"好物:",g)<br>
+if w==22:<br>
+    print("属性：",a,"性格：",d,"好物:",h)<br>
+if w==27:<br>
+    print("属性：",a,"性格：",f,"好物:",i)<br>
+if w==17:<br>
+    print("属性：",b,"性格：",d,"好物:",g)<br>
+if w==19:<br>
+    print("属性：",b,"性格：",e,"好物:",h)<br>
+if w==24:<br>
+    print("属性：",b,"性格：",f,"好物:",i)<br>
+if w==64:<br>
+    print("属性：",c,"性格：",f,"好物:",g)<br>
+if w==66:<br>
+    print("属性：",c,"性格：",f,"好物:",h)<br>
+if w==71:<br>
+    print("属性：",c,"性格：",b,"好物:",i)<br>
+if w==96:<br>
+    print("属性：",a,"性格：",d,"好物:",g)<br>
+if w==98:<br>
+    print("属性：",a,"性格：",b,"好物:",h)<br>
+if w==103:<br>
+    print("属性：",a,"性格：",b,"好物:",i)<br>
+if w==99:<br>
+    print("属性：",b,"性格：",e,"好物:",g)<br>
+if w==101:<br>
+    print("属性：",b,"性格：",e,"好物:",h)<br>
+if w==106:<br>
+    print("属性：",b,"性格：",e,"好物:",i)<br>
+if w==150:<br>
+    print("属性：",c,"性格：",f,"好物:",i)<br>
+if w==145:<br>
+    print("属性：",c,"性格：",f,"好物:",h)<br>
+if w==143:<br>
+    print("属性：",c,"性格：",f,"好物:",g)<br>
+if w==219:<br>
+    print("属性：",a,"性格：",e,"好物:",g)<br>
+if w==221:<br>
+    print("属性：",a,"性格：",e,"好物:",h)<br>
+if w==226:<br>
+    print("属性：",a,"性格：",e,"好物:",i)<br>
+if w==216:<br>
+    print("属性：",b,"性格：",d,"好物:",g)<br>
+if w==218:<br>
+    print("属性：",b,"性格：",d,"好物:",h)<br>
+if w==223:<br>
+    print("属性：",b,"性格：",d,"好物:",i)<br>
+if w==263:<br>
+    print("属性：",c,"性格：",f,"好物:",g)<br>
+if w==265:<br>
+    print("属性：",c,"性格：",f,"好物:",h)<br>
+if w==270:<br>
+    print("属性：",c,"性格：",f,"好物:",i)<br>
+
      <h2>感想</h2>
-    <div>
-         <!-- ①↓に文字を書いてみよう -->
- <div>aiueo</div>
-  <div>kakikukeko</div>
-         <!-- ②↓に画像（imagesフォルダにあるtest.png）を挿入してみよう -->
-<img src="./images/testimage.png"width="30%"><br>
-<img src="./images/testimage.png"width="30%"><br>
-<img src="../images/0_XBlogo.png"width="30%"><br>
-<img src="./images/IMG_1709.jpeg"width="30%">
-
-         <!-- ③↓に箇条書きをしてみよう -->
-<ol>
-   <li> sasisuseso</li>
-   <li>tatituteto</li>
-</ol>
-<ul>
-    <li>naninuneno</li>
-    <li>hahihuheho</li>
- </ul>
-         <!-- ④↓に外部リンクを作ってみよう -->
-<a href="./index.html">デザイン演習Ⅰ・Ⅱトップページ</a><br>
-                    <a href="../index.html">XBPトップページ</a><br>
-                    <a href="https://www.yahoo.co.jp/" target="_blank">Yahoo</a><br>
-                    <a href="./files/test.pdf" target="_blank">pdfファイル</a>
-    </div>
-＜div class="video"＞<iframe width="560" height="315" src="https://www.youtube.com/embed/GufMfGgdPoQ?si=nFU7ULbf2qvWRfLR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>＜/div＞
-
-
-
+  最近再流行している某人気ゲーム🥚をベースに作ってみましたが、単純な一つ分岐を作るだけでも複雑な入力をする必要があり、<br>
+  一文字打ち間違えるだけで全く機能しなくなるので難しかったです。しかし、自分が思い描いていた通りに動いたときは楽しかったですし、<br>
+  今まで身近に合ったけれど知らなかった作る側の視点を知れてとても面白かったです。<br>
+  今回は分岐をつくる際に選択肢ごとにポイントを与え、その合計の値にそれぞれ結果を作りました。仕組み自体は単純で下が、<br>
+  合計の値が全て被らないようにしないといけなかったので選択肢ごとに何ポイント与えるかを考えるのに手間がかかりました。<br>
+  次回はわざわざ合計の値を考えなくてもいいようなコマンドに挑戦したいと思いました。
 
 </body>
 </html>
