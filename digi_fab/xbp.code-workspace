@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "xbp",
+			"path": ".."
+		},
+		{
+			"name": "xbp_text_mining-main",
+			"path": "../../../Downloads/xbp_text_mining-main"
+		},
+		{
+			"name": "css",
+			"path": "../css"
+		},
+		{
+			"name": "de12",
+			"path": "../de12"
+		},
+		{
+			"name": "digi_fab",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "xbp"
+	}
+}
