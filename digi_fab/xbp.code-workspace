@@ -1,24 +1,19 @@
 {
 	"folders": [
 		{
-			"name": "xbp",
 			"path": ".."
 		},
 		{
-			"name": "xbp_text_mining-main",
+			"path": "../../../Desktop/python"
+		},
+		{
+			"path": "../../../Desktop/xbp_pos-main"
+		},
+		{
 			"path": "../../../Downloads/xbp_text_mining-main"
 		},
 		{
-			"name": "css",
-			"path": "../css"
-		},
-		{
-			"name": "de12",
-			"path": "../de12"
-		},
-		{
-			"name": "digi_fab",
-			"path": "."
+			"path": "../../../Downloads/xbp_text_mining-main-2"
 		}
 	],
 	"settings": {

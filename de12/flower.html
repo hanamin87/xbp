@@ -8,6 +8,7 @@
     <!-- h1.htmlからある行をコピペしてくればOK -->
 </head>
 <body>
+  <div>花束を提案してくれるアプリ</div>
      <h2>ソースコード</h2>
 from openai import OpenAI<br>
 
@@ -48,7 +49,11 @@ response = client.chat.completions.create(<br>
 print("おすすめの花束")<br>
 print(response.choices[0].message.content)<br>
 
-     <h2>感想</h2>
-
+   <h2>実践</h2>
+   ⭐️入力
+    <div><img src="./images/flower1.png"width="70%"><br>
+      ⭐️出力<br>
+<img src="./images/flower2.png"width="70%"><br>
+<img src="./images/flower3.png"width="70%"><br>
 </body>
 </html>
