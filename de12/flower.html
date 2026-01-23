@@ -9,44 +9,44 @@
 </head>
 <body>
      <h2>ソースコード</h2>
-from openai import OpenAI
+from openai import OpenAI<br>
 
-#APIを使うkeyを入力します。これは絶対にwebページなどで公開してはいけません。
-client = OpenAI()
+#APIを使うkeyを入力します。これは絶対にwebページなどで公開してはいけません。<br>
+client = OpenAI()<br>
 
 
-print("花束提案アプリ")
+print("花束提案アプリ")<br>
 
-# 入力
-color = input("希望する色合いを入力してください（例：赤・ピンク・白など）：")
-use = input("用途を入力してください（例：プレゼント・結婚式・インテリアなど）：")
-budget = input("予算を入力してください（例：3000円・5000円など）：")
+# 入力<br>
+color = input("希望する色合いを入力してください（例：赤・ピンク・白など）：")<br>
+use = input("用途を入力してください（例：プレゼント・結婚式・インテリアなど）：")<br>
+budget = input("予算を入力してください（例：3000円・5000円など）：")<br>
 
-# 質問文を作成
-question = f"""
-あなたはフラワーショップのプロのスタッフです。
-以下の条件に合った花束を1つ提案してください。
+# 質問文<br>
+question = f"""<br>
+あなたはフラワーショップのプロのスタッフです。<br>
+以下の条件に合った花束を1つ提案してください。<br>
 
-・色合い：{color}
-・用途：{use}
-・予算：{budget}
+・色合い：{color}<br>
+・用途：{use}<br>
+・予算：{budget}<br>
 
-提案内容には次を含めてください。
-・おすすめの花の種類
-・全体の雰囲気
-・なぜその花束が適しているかの簡単な説明
-"""
+提案内容には次を含めてください。<br>
+・おすすめの花の種類<br>
+・全体の雰囲気<br>
+・なぜその花束が適しているかの簡単な説明<br>
+"""<br>
 
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {"role": "user", "content": question}
-    ]
-)
+response = client.chat.completions.create(<br>
+    model="gpt-4o-mini",<br>
+    messages=[<br>
+        {"role": "user", "content": question}<br>
+    ]<br>
+)<br>
 
-# 出力
-print("おすすめの花束")
-print(response.choices[0].message.content)
+# 出力<br>
+print("おすすめの花束")<br>
+print(response.choices[0].message.content)<br>
 
      <h2>感想</h2>
 
